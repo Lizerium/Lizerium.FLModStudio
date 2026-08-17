@@ -15,7 +15,7 @@
 > [!NOTE]
 > Этот проект является частью экосистемы **Lizerium** и относится к направлению:
 >
-> - [`Lizerium.Software.Structs`](https://github.com/Lizerium/Lizerium.Software.Structs)
+> - [`Lizerium.Frameworks.Structs`](https://github.com/Lizerium/Lizerium.Frameworks.Structs)
 >
 > Если вы ищете связанные инженерные и вспомогательные инструменты, начните оттуда.
 
