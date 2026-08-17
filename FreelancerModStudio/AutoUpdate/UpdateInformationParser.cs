@@ -1,25 +1,52 @@
 using System;
+using System.Text.RegularExpressions;
 
 namespace FreelancerModStudio.AutoUpdate
 {
     internal static class UpdateInformationParser
     {
+        internal const string ReleaseRepositoryUrl = "https://github.com/Lizerium/Lizerium.FLModStudio";
+        internal const string DefaultCheckFileUrl = "https://raw.githubusercontent.com/Lizerium/Lizerium.FLModStudio/master/Setup/setup.iss";
+
         public static UpdateInformation Parse(string content)
         {
-            UpdateInformation updateInformation = new UpdateInformation();
-
-            string[] line = content.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
-
-            if (line.Length < 3)
+            if (string.IsNullOrWhiteSpace(content))
             {
                 return null;
             }
 
-            updateInformation.Version = new Version(line[0]);
-            updateInformation.FileUri = new Uri(line[1].Trim());
-            updateInformation.Silent = (line[2].Trim() == "1");
+            Match versionMatch = Regex.Match(
+                content,
+                @"^\s*#define\s+MyAppVersion\s+'(?<version>[^']+)'\s*$",
+                RegexOptions.Multiline);
 
-            return updateInformation;
+            if (!versionMatch.Success)
+            {
+                return null;
+            }
+
+            Version version = new Version(versionMatch.Groups["version"].Value);
+            string fileName = GetOutputFileName(content, version);
+
+            return new UpdateInformation
+                       {
+                           Version = version,
+                           FileUri = new Uri(string.Format("{0}/releases/download/{1}/{2}", ReleaseRepositoryUrl, version, fileName)),
+                           Silent = false
+                       };
+        }
+
+        private static string GetOutputFileName(string content, Version version)
+        {
+            Match outputMatch = Regex.Match(
+                content,
+                @"^\s*OutputBaseFilename\s*=\s*(?<name>[^\r\n]+)\s*$",
+                RegexOptions.Multiline);
+
+            string fileName = outputMatch.Success ? outputMatch.Groups["name"].Value.Trim() : "FreelancerModStudio-{#MyAppVersion}";
+            fileName = fileName.Replace("{#MyAppVersion}", version.ToString());
+
+            return fileName.EndsWith(".exe", StringComparison.OrdinalIgnoreCase) ? fileName : fileName + ".exe";
         }
     }
 }

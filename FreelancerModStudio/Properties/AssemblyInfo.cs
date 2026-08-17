@@ -1,4 +1,5 @@
-ï»¿using System.Reflection;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Freelancer Mod Studio")]
@@ -6,9 +7,12 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FreelancerAftermath")]
 [assembly: AssemblyProduct("Freelancer Mod Studio")]
-[assembly: AssemblyCopyright("Copyright Â© stfx 2009 - 2013;\nCopyright Â© FreelancerAftermath 2020")]
+[assembly: AssemblyCopyright("Copyright © stfx 2009 - 2013;\nCopyright © FreelancerAftermath 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: Guid("d88a7221-eaf7-4b5b-a285-a71912942382")]
 [assembly: AssemblyVersion("1.3.1.1")]
+[assembly: InternalsVisibleTo("FreelancerModStudio.Tests")]
+
+

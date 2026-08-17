@@ -44,7 +44,7 @@ namespace FreelancerModStudio
                 }
 
                 //check for update
-                if (Settings.Data.Data.General.AutoUpdate.Enabled && Settings.Data.Data.General.AutoUpdate.UpdateFile != null && 
+                if (Settings.Data.Data.General.AutoUpdate.Enabled && Settings.Data.Data.General.AutoUpdate.UpdateFile != null &&
                     Settings.Data.Data.General.AutoUpdate.LastCheck.Date.AddDays(Settings.Data.Data.General.AutoUpdate.CheckInterval) <= DateTime.Now.Date)
                 {
                     Update.Check(true, Settings.Data.Data.General.AutoUpdate.SilentDownload);
@@ -75,7 +75,7 @@ namespace FreelancerModStudio
                 {
                     if (!silentCheck)
                     {
-                        MessageBox.Show(string.Format(Strings.UpdatesDownloadException,  AssemblyUtils.Name),  AssemblyUtils.Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(string.Format(Strings.UpdatesDownloadException, AssemblyUtils.Name), AssemblyUtils.Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     Settings.Data.Data.General.AutoUpdate.LastCheck = DateTime.Now;
@@ -285,8 +285,8 @@ namespace FreelancerModStudio
                 Data.Data.General.CheckValidData();
                 SharedGeometries.LoadColors(Data.Data.General.ColorBox);
 
-                if (Data.Data.General.AutoUpdate.UpdateFile == @"http://freelancermodstudio.googlecode.com/svn/trunk/updates.txt")
-                    Data.Data.General.AutoUpdate.UpdateFile = @"https://raw.githubusercontent.com/AftermathFreelancer/FLModStudio/master/updates.txt";
+                if (Data.Data.General.AutoUpdate.UpdateFile == @"https://raw.githubusercontent.com/Lizerium/Lizerium.FLModStudio/master/Setup/setup.iss")
+                    Data.Data.General.AutoUpdate.UpdateFile = AutoUpdate.UpdateInformationParser.DefaultCheckFileUrl;
             }
 
             public static void LoadTemplates()
@@ -341,10 +341,10 @@ namespace FreelancerModStudio
                 Abort(ref thread, true);
 
                 thread = new System.Threading.Thread(threadDelegate)
-                    {
-                        Priority = priority,
-                        IsBackground = isBackground
-                    };
+                {
+                    Priority = priority,
+                    IsBackground = isBackground
+                };
                 thread.Start();
             }
 
@@ -394,7 +394,7 @@ namespace FreelancerModStudio
         {
             public static void Show(Exception exception)
             {
-                MessageBox.Show(ExceptionUtils.Get(exception),  AssemblyUtils.Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ExceptionUtils.Get(exception), AssemblyUtils.Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             public static void Show(string errorDescription, Exception exception)

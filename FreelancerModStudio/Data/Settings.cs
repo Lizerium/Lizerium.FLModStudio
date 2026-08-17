@@ -222,7 +222,7 @@ namespace FreelancerModStudio.Data
             {
                 this.AutoUpdate.CheckInterval = 28;
                 this.AutoUpdate.SilentDownload = true;
-                this.AutoUpdate.UpdateFile = @"https://raw.githubusercontent.com/AftermathFreelancer/FLModStudio/master/updates.txt";
+                this.AutoUpdate.UpdateFile = FreelancerModStudio.AutoUpdate.UpdateInformationParser.DefaultCheckFileUrl;
             }
         }
 

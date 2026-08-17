@@ -160,7 +160,7 @@
     <value>False</value>
   </data>
   <data name="mnuNewFile.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+N</value>
+    <value>Control+N</value>
   </data>
   <data name="mnuNewFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 22</value>
@@ -190,7 +190,7 @@
     <value>False</value>
   </data>
   <data name="mnuOpenFile.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+O</value>
+    <value>Control+O</value>
   </data>
   <data name="mnuOpenFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 22</value>
@@ -217,7 +217,7 @@
     <value>False</value>
   </data>
   <data name="mnuClose.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+B</value>
+    <value>Control+B</value>
   </data>
   <data name="mnuClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>187, 22</value>
@@ -250,7 +250,7 @@
     <value>False</value>
   </data>
   <data name="mnuSave.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+S</value>
+    <value>Control+S</value>
   </data>
   <data name="mnuSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>187, 22</value>
@@ -262,7 +262,7 @@
     <value>False</value>
   </data>
   <data name="mnuSaveAs.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+Alt+S</value>
+    <value>Control+Alt+S</value>
   </data>
   <data name="mnuSaveAs.Size" type="System.Drawing.Size, System.Drawing">
     <value>187, 22</value>
@@ -274,7 +274,7 @@
     <value>False</value>
   </data>
   <data name="mnuSaveAll.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+Shift+S</value>
+    <value>Control+Shift+S</value>
   </data>
   <data name="mnuSaveAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>187, 22</value>
@@ -307,7 +307,7 @@
     <value>False</value>
   </data>
   <data name="mnuUndo.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+Z</value>
+    <value>Control+Z</value>
   </data>
   <data name="mnuUndo.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
@@ -319,7 +319,7 @@
     <value>False</value>
   </data>
   <data name="mnuRedo.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+Y</value>
+    <value>Control+Y</value>
   </data>
   <data name="mnuRedo.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
@@ -334,7 +334,7 @@
     <value>False</value>
   </data>
   <data name="mnuCut.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+X</value>
+    <value>Control+X</value>
   </data>
   <data name="mnuCut.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
@@ -346,7 +346,7 @@
     <value>False</value>
   </data>
   <data name="mnuCopy.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+C</value>
+    <value>Control+C</value>
   </data>
   <data name="mnuCopy.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
@@ -358,7 +358,7 @@
     <value>False</value>
   </data>
   <data name="mnuPaste.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+V</value>
+    <value>Control+V</value>
   </data>
   <data name="mnuPaste.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
@@ -382,7 +382,7 @@
     <value>False</value>
   </data>
   <data name="mnuDelete.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Del</value>
+    <value>Delete</value>
   </data>
   <data name="mnuDelete.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
@@ -394,7 +394,7 @@
     <value>False</value>
   </data>
   <data name="mnuGoTo.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+G</value>
+    <value>Control+G</value>
   </data>
   <data name="mnuGoTo.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
@@ -412,7 +412,7 @@
     <value>False</value>
   </data>
   <data name="mnuSelectAll.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+A</value>
+    <value>Control+A</value>
   </data>
   <data name="mnuSelectAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 22</value>
@@ -469,7 +469,7 @@
     <value />
   </data>
   <data name="mnuFocusSelected.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+F</value>
+    <value>Control+F</value>
   </data>
   <data name="mnuFocusSelected.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -487,7 +487,7 @@
     <value />
   </data>
   <data name="mnuLookAtSelected.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+Shift+F</value>
+    <value>Control+Shift+F</value>
   </data>
   <data name="mnuLookAtSelected.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -502,7 +502,7 @@
     <value>False</value>
   </data>
   <data name="mnuTrackSelected.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+T</value>
+    <value>Control+T</value>
   </data>
   <data name="mnuTrackSelected.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -523,7 +523,7 @@
     <value>False</value>
   </data>
   <data name="mnuManipulationNone.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+Q</value>
+    <value>Control+Q</value>
   </data>
   <data name="mnuManipulationNone.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -538,7 +538,7 @@
     <value>False</value>
   </data>
   <data name="mnuManipulationTranslate.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+W</value>
+    <value>Control+W</value>
   </data>
   <data name="mnuManipulationTranslate.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -553,7 +553,7 @@
     <value>False</value>
   </data>
   <data name="mnuManipulationRotate.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+E</value>
+    <value>Control+E</value>
   </data>
   <data name="mnuManipulationRotate.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -568,7 +568,7 @@
     <value>False</value>
   </data>
   <data name="mnuManipulationScale.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+R</value>
+    <value>Control+R</value>
   </data>
   <data name="mnuManipulationScale.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -589,7 +589,7 @@
     <value>False</value>
   </data>
   <data name="mnuShowModels.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+1</value>
+    <value>Control+1</value>
   </data>
   <data name="mnuShowModels.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -604,7 +604,7 @@
     <value>False</value>
   </data>
   <data name="mnuChangeVisibility.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+H</value>
+    <value>Control+H</value>
   </data>
   <data name="mnuChangeVisibility.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 22</value>
@@ -670,7 +670,7 @@
     <value>False</value>
   </data>
   <data name="mnuCloseAllDocuments.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+Shift+B</value>
+    <value>Control+Shift+B</value>
   </data>
   <data name="mnuCloseAllDocuments.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 22</value>

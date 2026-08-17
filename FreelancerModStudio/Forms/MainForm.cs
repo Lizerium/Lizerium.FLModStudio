@@ -161,10 +161,10 @@ namespace FreelancerModStudio
         }
 
         private void MnuVisitForumClick(object sender, EventArgs e) =>
-            Process.Start("https://github.com/AftermathFreelancer/FLModStudio");
+            Process.Start("https://github.com/Lizerium/Lizerium.FLModStudio");
 
         private void MnuReportIssueClick(object sender, EventArgs e) =>
-            Process.Start("https://github.com/AftermathFreelancer/FLModStudio/issues");
+            Process.Start("https://github.com/Lizerium/Lizerium.FLModStudio/issues");
 
         private void MnuCloseAllDocumentsClick(object sender, EventArgs e)
         {
